@@ -2,8 +2,8 @@
 
 Personal website for Ario Rostami, Full-Stack Software Engineer in Metro Vancouver.
 
-GitHub Pages: https://ariorostami.github.io/
-Final custom domain: https://ariorostami.com/ (connection pending).
+Website: https://ariorostami.com/
+GitHub Pages: https://ariorostami.github.io/ (redirects to the custom domain).
 
 Plain static HTML/CSS/JavaScript in `dist/`. No build command or runtime dependencies.
 
