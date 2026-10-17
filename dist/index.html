@@ -16,8 +16,8 @@
     <meta name="twitter:title" content="Ario Rostami — Full-Stack Software Engineer">
     <meta name="twitter:description" content="Professional experience, skills, selected projects, and résumé. Based in Metro Vancouver.">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <script src="theme.js"></script>
-    <link rel="stylesheet" href="styles.css?v=20261016-3">
+    <script src="theme.js?v=20261016-4"></script>
+    <link rel="stylesheet" href="styles.css?v=20261016-4">
     <script src="config.js" defer></script>
     <script src="app.js" defer></script>
   </head>
@@ -34,12 +34,10 @@
           <a href="assets/Ario-Rostami-Resume.pdf">Résumé</a>
         </nav>
         <div class="appearance-control" hidden>
-          <label for="appearance">Appearance</label>
-          <select id="appearance" name="appearance">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="system">System</option>
-          </select>
+          <button id="appearance-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.2 15.1A8.7 8.7 0 0 1 8.9 3.8 8.8 8.8 0 1 0 20.2 15.1Z" fill="currentColor"/></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 1.8v3M12 19.2v3M1.8 12h3m14.4 0h3M4.8 4.8l2.1 2.1m10.2 10.2 2.1 2.1m0-14.4-2.1 2.1M6.9 17.1l-2.1 2.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg>
+          </button>
         </div>
       </header>
 
@@ -156,10 +154,10 @@
                 <figcaption>Liquid Glass</figcaption>
               </figure>
               <figure>
-                <a class="gigaboard-screenshot" href="assets/gigaboard-black.jpg" aria-label="View full-size Gigaboard black theme screenshot">
-                  <img src="assets/gigaboard-black.jpg" width="1170" height="2048" alt="Gigaboard’s dark keyboard in Notes with contextual word suggestions." loading="lazy">
+                <a class="gigaboard-screenshot" href="assets/gigaboard-one-handed.png" aria-label="View full-size Gigaboard one-handed mode screenshot">
+                  <img src="assets/gigaboard-one-handed.png" width="1206" height="2622" alt="Gigaboard in one-handed mode, with a swipe trace across the keyboard in Notes." loading="lazy">
                 </a>
-                <figcaption>Black theme</figcaption>
+                <figcaption>One-handed mode</figcaption>
               </figure>
             </div>
           </article>
