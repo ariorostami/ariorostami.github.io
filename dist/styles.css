@@ -145,9 +145,9 @@ h3 { font-size: 1.125rem; letter-spacing: -0.015em; }
 .policy-list li::marker { color: var(--muted); }
 
 .image-preview {
-  width: min(94vw, 1200px);
-  max-width: none;
-  max-height: 94dvh;
+  width: fit-content;
+  max-width: calc(100vw - 0.75rem);
+  max-height: calc(100dvh - 0.75rem);
   padding: 0;
   overflow: visible;
   color: var(--text);
@@ -156,21 +156,20 @@ h3 { font-size: 1.125rem; letter-spacing: -0.015em; }
 }
 .image-preview::backdrop { background: rgb(10 13 17 / 78%); }
 .image-preview-panel {
-  max-height: 94dvh;
-  padding: 0.75rem;
-  overflow: auto;
+  position: relative;
+  width: fit-content;
+  max-width: calc(100vw - 0.75rem);
+  max-height: calc(100dvh - 0.75rem);
+  padding: 0.5rem;
   background: var(--background);
   border: 1px solid var(--line);
   border-radius: 6px;
   box-shadow: 0 1rem 3rem rgb(0 0 0 / 35%);
 }
-.image-preview-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.75rem; }
-.image-preview-toolbar p { font-size: 0.875rem; color: var(--muted); }
-.image-preview-close { min-height: 44px; padding: 0.375rem 0.75rem; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 4px; cursor: pointer; }
+.image-preview-close { position: absolute; top: 0.75rem; right: 0.75rem; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 50%; cursor: pointer; }
 .image-preview-close:hover { color: var(--accent); }
-.image-preview-full { display: grid; place-items: center; cursor: zoom-in; }
-.image-preview-full img { width: auto; height: auto; max-width: 100%; max-height: calc(94dvh - 7rem); object-fit: contain; }
-.image-preview-hint { margin-top: 0.5rem; color: var(--muted); font-size: 0.8125rem; text-align: center; }
+.image-preview-full { display: block; width: fit-content; max-width: 100%; cursor: zoom-in; line-height: 0; }
+.image-preview-full img { width: auto; height: auto; max-width: calc(100vw - 1.75rem); max-height: calc(100dvh - 1.75rem); object-fit: contain; }
 .image-preview[open] { animation: preview-appear 120ms ease-out; }
 @keyframes preview-appear { from { opacity: 0; transform: scale(0.985); } to { opacity: 1; transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) { .image-preview[open] { animation: none; } }

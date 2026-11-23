@@ -17,10 +17,10 @@
     <meta name="twitter:description" content="Professional experience, skills, selected projects, and résumé. Based in Metro Vancouver.">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <script src="theme.js?v=20261016-4"></script>
-    <link rel="stylesheet" href="styles.css?v=20261123-1">
+    <link rel="stylesheet" href="styles.css?v=20261123-2">
     <script src="config.js" defer></script>
     <script src="app.js" defer></script>
-    <script src="image-preview.js" defer></script>
+    <script src="image-preview.js?v=20261123-2" defer></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -227,16 +227,14 @@
       </footer>
     </div>
 
-    <dialog class="image-preview" aria-labelledby="image-preview-title">
+    <dialog class="image-preview" aria-label="Image preview">
       <div class="image-preview-panel">
-        <div class="image-preview-toolbar">
-          <p id="image-preview-title">Image preview</p>
-          <button class="image-preview-close" type="button" aria-label="Close image preview">Close</button>
-        </div>
-        <a class="image-preview-full" aria-label="Open the full-size image">
+        <button class="image-preview-close" type="button" aria-label="Close image preview">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
+        </button>
+        <a class="image-preview-full" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size image in a new tab">
           <img alt="">
         </a>
-        <p class="image-preview-hint">Click the image to open it on its own.</p>
       </div>
     </dialog>
   </body>
